@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kelly Gikonyo | Developer Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-somehash" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+
+<body>
+
+<header>
+    <h2 class="logo">Kelly Gikonyo</h2>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button onclick="toggleDarkMode()" aria-label="Toggle dark mode">🌙</button>
+</header>
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero" data-aos="fade-in">
+    <div class="container">
+        <img src="images/profile.jpg" class="profile" data-aos="zoom-in">
+        <h1>Hello, I'm Kelly Gikonyo</h1>
+        <h3>I am a <span id="typing"></span></h3>
+        <div class="hero-buttons">
+            <a href="files/Kelly_CV.pdf" download class="button">Download CV</a>
+            <a href="#projects" class="button">View Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" data-aos="fade-up">
+    <div class="container about-container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a Third-Year Informatics student in Moi University, Kenya passionate about building
+                web applications and solving real world problems through technology.
+                I enjoy working with HTML, Python,CSS, JavaScript and Node.js while also
+                learning Python and software engineering practices. Passionate about creating user-friendly applications that make a positive impact on people's lives.
+            </p>
+            <p>
+                Ever since I wrote my first line of code, I’ve been fascinated by
+                the power of programming to bring ideas to life. Whether it’s a small
+                script or a full web application, solving problems through code
+                gives me a sense of achievement and joy.
+            </p>
+        </div> 
+        </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" data-aos="fade-up">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML<div class="bar"><div class="html"></div></div></div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS<div class="bar"><div class="css"></div></div></div>
+                <div class="skill-item"><i class="fab fa-js-square"></i> JavaScript<div class="bar"><div class="js"></div></div></div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & Tools</h3>
+                <div class="skill-item"><i class="fab fa-python"></i> Python<div class="bar"><div class="python"></div></div></div>
+                <div class="skill-item"><i class="fas fa-database"></i> SQL<div class="bar"><div class="sql" style="width:65%; background:#e67e22;"></div></div></div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> Git<div class="bar"><div class="git" style="width:80%; background:#f1502f;"></div></div></div>
+            </div>
+        </div>
+        <div class="skill-soft" data-aos="fade-in">
+            <h3>Soft Skills</h3>
+            <p>Problem-solving • Teamwork • Time management • Communication</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" data-aos="fade-up">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project-container">
+
+            <div class="project-card" data-aos="zoom-in">
+                <img src="images/project-guidance.png" alt="Guidance System screenshot" class="project-screenshot">
+                <h3>Online Guidance & Counseling System</h3>
+                <p>A platform where students communicate with counselors and admins.</p>
+                <p class="tech-list">Technologies: HTML, CSS, JavaScript, Node.js</p>
+                <a href="https://github.com/KellyGikonyo/counsel-chat-api" target="_blank" class="button">GitHub</a>
+                <!-- live demo link if available -->
+            </div>
+
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/project-calendar.png" alt="Calendar app screenshot" class="project-screenshot">
+                <h3>Calendar Reminder App</h3>
+                <p>A small application for managing reminders with calendar support.</p>
+                <p class="tech-list">Technologies: Python, Flask, SQLite</p>
+                <a href="https://github.com/KellyGikonyo/CalendarReminderApp" target="_blank" class="button">GitHub</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="cv" data-aos="fade-up">
+    <div class="container">
+        <h2>Curriculum Vitae</h2>
+        <div class="cv-preview">
+            <iframe src="files/Kelly_CV.pdf" frameborder="0" title="CV preview"></iframe>
+        </div>
+        <a href="files/Kelly_CV.pdf" download class="button">Download CV</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" data-aos="fade-up">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links" data-aos="fade-in">
+            <a href="https://github.com/KellyGikonyo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kellygikonyo" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/kellygikonyo" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+
+<p>© 2026 Kelly Gikonyo | Developer Portfolio</p>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
